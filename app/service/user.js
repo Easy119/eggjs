@@ -51,7 +51,7 @@ class userService extends Service {
             }else{
                 console.log(md5(userpass) )
                 if(queryResult.userpass == md5(userpass) ){
-                    return  Object.assign(ERROR, {
+                    return  Object.assign(SUCCESS, {
                         msg: '登录成功'
                     });
                 }else{
